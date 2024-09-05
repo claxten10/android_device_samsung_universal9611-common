@@ -69,8 +69,6 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.samsung \
-    libsensorndkbridge \
-    libhwjpeg
 
 # Apeture
 TARGET_BUILD_APERTURE_CAMERA := true
@@ -96,15 +94,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.composer.hwc3-service.slsi \
     gralloc.exynos9611:64 \
-    libion
-
-PRODUCT_PACKAGES += \
-    libGrallocWrapper:64
 
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.4.vendor:32
 
 # FastCharge
 PRODUCT_PACKAGES += \
@@ -121,8 +114,6 @@ PRODUCT_PACKAGES += \
 
 # GPS/GNSS
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor:64 \
-    android.hardware.gnss@2.1.vendor \
     init.gps.rc
 
 # Graphics
@@ -156,12 +147,6 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \
-    libkeymaster4_1support.vendor:64
-
-PRODUCT_PACKAGES += \
-    libcrypto-tm \
-    libshim_crypto:64 \
-    libssl-tm
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -288,32 +273,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/linker/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# Protobuf CPP
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat
-
 # Ril
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
     secril_config_svc
-
-# VNDK
-PRODUCT_PACKAGES += \
-    libnetutils.vendor:64 \
-    libsqlite.vendor:64 \
-    libstagefright_softomx_plugin.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.samsung-multihal
-
-# Shims
-PRODUCT_PACKAGES += \
-    libshim_sensorndkbridge \
-    libhidltransport_vendor \
-    libhwbinder_vendor
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \

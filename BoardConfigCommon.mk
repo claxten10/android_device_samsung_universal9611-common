@@ -38,6 +38,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
 
+# Include 64-bit drmserver to support 64-bit only devices
+TARGET_DYNAMIC_64_32_DRMSERVER := true
+
 ## Audio
 BOARD_LOW_LATENCY_CAPTURE_DURATION := 20
 

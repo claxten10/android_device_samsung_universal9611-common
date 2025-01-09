@@ -67,7 +67,6 @@ vendor/lib64/libvkmanager_vendor.so|cdfb5546e476058b1eb3695b6c21a181f9bb44bf
 vendor/lib64/libsemnativecarrierfeature.so|ca44453cf7cca968606b56936be7de0d214d74be
 
 ## EGL - From P610XXS4FXA1
-vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1;SYMLINK=vendor/lib/hw/vulkan.universal9611.so|7514fe04ecdd4018064640456006245120a0e12a
 vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1;SYMLINK=vendor/lib64/hw/vulkan.universal9611.so|63b7c45b6dd542008382b60619cbd2792781b25f
 
 ## TEE non-firmware

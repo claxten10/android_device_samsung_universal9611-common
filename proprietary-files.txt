@@ -37,7 +37,6 @@ vendor/etc/mixer_usb_white.xml
 
 ## RIL
 vendor/bin/cbd
-vendor/lib/libsecril-client.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libsecril-client.so
